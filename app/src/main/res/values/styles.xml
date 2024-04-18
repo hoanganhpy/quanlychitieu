@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SmallLabel" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:color">@color/colorGray</item>
+    </style>
+
+    <style name="SmallValue" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="SmallValueBold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="MediumValueBold" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="TransactionPageStyleActive" parent="Widget.AppCompat.TextView">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TransactionPageStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorTextInactive</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextButton" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextButtonBold" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="HeaderTitleText" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EditTextBigSize" parent="Widget.AppCompat.EditText">
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">23sp</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextViewBigSize" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:backgroundTint">@color/colorBlack</item>
+    </style>
+
+
+    <color name="colorBlack">#000000</color>
+</resources>

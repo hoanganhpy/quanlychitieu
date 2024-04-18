@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/btnThisMonth"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/this_month"
+        android:textColor="#5779FF"
+        android:textSize="20sp" />
+
+    <View
+
+        android:background="@color/colorDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/btnPrevMonth"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prev_month"
+        android:textColor="#5779FF"
+        android:textSize="20sp" />
+
+    <View
+        android:background="@color/colorDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/btnCustomized"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/customized"
+        android:textColor="#5779FF"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:background="@drawable/border_bottom">
+    <RelativeLayout
+        android:id="@+id/row_statistic_begin_money_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/SmallLabel"
+            android:id="@+id/tv_begin_money_key"
+            android:text="@string/begin_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/SmallValue"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/tv_begin_money_key"
+            android:id="@+id/tv_begin_money_value"
+            android:text="0.00 đ"
+            android:gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/row_statistic_end_money_box"
+        android:layout_below="@id/row_statistic_begin_money_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_end_money_key"
+            android:text="@string/end_amount"
+            style="@style/SmallLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/SmallValue"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/tv_end_money_key"
+            android:id="@+id/tv_end_money_value"
+            android:text="50,000.00 đ"
+            android:gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/row_statistic_divider"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/row_statistic_end_money_box"
+        android:background="@color/colorDivider"
+        android:layout_width="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="1dp"/>
+    <TextView
+        style="@style/SmallValueBold"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/row_statistic_divider"
+        android:id="@+id/tv_remain_money"
+        android:text="-50,000.00 đ"
+        android:gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

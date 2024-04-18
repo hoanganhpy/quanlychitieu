@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Quan Ly Chi Tieu</string>
+    <string name="home">Trang chủ</string>
+    <string name="profile">Cá nhân</string>
+    <string name="transaction">Giao dịch</string>
+    <string name="report">Báo cáo</string>
+    <string name="notification">Thông báo</string>
+    <string name="more">Khác</string>
+    <string name="begin_amount">Số dư đầu</string>
+    <string name="end_amount">Số dư cuối</string>
+    <string name="cancel">Hủy</string>
+    <string name="save">Lưu</string>
+    <string name="select_trans_group">Chọn nhóm</string>
+    <string name="amount_of_money">Số tiền</string>
+    <string name="note">Ghi chú</string>
+    <string name="add_transaction">Thêm giao dịch</string>
+    <string name="income">Khoản thu</string>
+    <string name="outgoing">Khoản chi</string>
+    <string name="chart">Biểu đồ</string>
+    <string name="this_month">Tháng này</string>
+    <string name="prev_month">Tháng trước</string>
+    <string name="customized">Tùy chọn</string>
+    <string name="select_date_range">Chọn khoảng thời gian</string>
+    <string name="notification_detail">Xem thông báo</string>
+    <string name="change_PIN">Đổi mã PIN</string>
+    <string name="edit">Sửa</string>
+    <string name="back">Quay lại</string>
+    <string name="edit_transaction">Sửa giao dịch</string>
+</resources>

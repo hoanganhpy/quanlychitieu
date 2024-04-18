@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:elevation="0dp"
+        android:background="@drawable/bg_header_border_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/HeaderTitleText"
+                    android:layout_marginStart="50dp"
+                    android:gravity="center"
+                    android:text="@string/chart"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"/>
+
+                <ImageView
+                    android:id="@+id/btnShowModal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/ic_more_24dp"
+                    android:tint="@color/colorPrimary" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/srlReporting"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E9EBEE">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:background="@color/colorWhite"
+                    android:layout_width="match_parent"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/SmallLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thời gian: " />
+                    <TextView
+                        android:id="@+id/tvReportStartDate"
+                        style="@style/SmallValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/tvReportEndDate"
+                        style="@style/SmallValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:background="@color/colorWhite"
+                    android:layout_width="match_parent"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/SmallLabel"
+                            android:text="Số dư ngày đầu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/tvMoneyInTheBegin"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/SmallLabel"
+                            android:text="Số dư ngày cuối"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/tvMoneyInTheEnd"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorWhite"
+                    android:layout_width="match_parent"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/SmallLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tỉ lệ khoản thu - khoản chi" />
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pieChart1"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
