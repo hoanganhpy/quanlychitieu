@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:enabled="true"
+        android:id="@+id/nav_action_transaction"
+        android:icon="@drawable/ic_wallet_24dp"
+        android:title="@string/transaction"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:enabled="true"
+        android:id="@+id/nav_action_report"
+        android:icon="@drawable/ic_report_24dp"
+        android:title="@string/report"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:enabled="true"
+        android:id="@+id/nav_action_notification"
+        android:icon="@drawable/ic_notification_24dp"
+        android:title="@string/notification"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:enabled="true"
+        android:id="@+id/nav_action_more"
+        android:icon="@drawable/ic_menu"
+        android:title="@string/more"
+        app:showAsAction="ifRoom"
+        />
+</menu>

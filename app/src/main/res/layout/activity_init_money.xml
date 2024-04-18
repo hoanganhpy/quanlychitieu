@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_gradient">
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_marginTop="100dp"
+            android:id="@+id/etInitMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_single"
+            android:hint="Số tiền"
+            android:inputType="number"
+            android:padding="15dp" />
+
+        <Button
+            android:layout_below="@id/etInitMoney"
+            android:id="@+id/btnSaveInitMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:text="XÁC NHẬN"
+            android:textAllCaps="false"
+            android:textColor="#FE5295"
+            android:textSize="17sp"/>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
